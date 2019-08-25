@@ -1,0 +1,24 @@
+version: '3.4'
+
+services:
+  brook.cnblogimage.core:
+    image: ${DOCKER_REGISTRY-}brookcnblogimage
+    build:
+      context: .
+      dockerfile: Brook.CnblogImage.Core/Dockerfile
+    ports:
+      - "32769:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_CNBLOG_BLOGID=xxxx
+      - ASPNETCORE_CNBLOG_USERNAME=xxxx
+      - ASPNETCORE_CNBLOG_PASSWORD=xxx
+      - ASPNETCORE_TOKEN=xxxx
+    restart: always 
+    volumes:
+      - ./Resources:/app/Resources
+      
+# networks:
+#   default:
+#     external:
+#       name: nginx-proxy
