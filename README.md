@@ -52,6 +52,9 @@ services:
       - ./Resources:/app/Resources
 ```
 
+* 如何使用
+![](https://github.com/yuefengkai/Brook.CnblogImage.Core/blob/master/assets/2.jpeg?raw=true)
+![](https://github.com/yuefengkai/Brook.CnblogImage.Core/blob/master/assets/1.png?raw=true)
 -------
 
 如果觉得有用请给我个Start!
